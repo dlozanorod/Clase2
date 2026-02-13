@@ -7,6 +7,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import utilities.Logs;
 
+import java.time.Duration;
+
 public class World {
     WebDriver driver;
 
@@ -33,6 +35,9 @@ public class World {
 
         /*Logs.debug("Eliminando las cookies");
         driver.manage().deleteAllCookies();*/
+
+        Logs.debug("Agregando implicitWait");
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
     }
 
