@@ -1,6 +1,7 @@
 package steps;
 
 import io.cucumber.java.*;
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -11,6 +12,7 @@ import java.time.Duration;
 
 public class World {
     WebDriver driver;
+    private final String mainUrl = "https://tutorials.blassacademy.com";
 
     @BeforeAll
     public static void BeforeAll() {
@@ -55,5 +57,11 @@ public class World {
 
     }
 
+    @Given("Navego a la pagina de {string}")
+    public void navegoALaPaginaDe(String path) {
+        //https://tutorials.blassacademy.com/ + login
+        final var url = String.format("%s/%s",mainUrl,path);
+        driver.get(url);
 
+    }
 }
