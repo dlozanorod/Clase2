@@ -1,9 +1,25 @@
-17:57:41.027 DEBUG AUTOMATION - Inicializando el driver
-17:57:41.910 DEBUG AUTOMATION - Maximizando la pantalla
-17:57:41.936 DEBUG AUTOMATION - Agregando implicitWait
-17:57:42.502 INFO  AUTOMATION - Escribo el username
-17:57:42.568 INFO  AUTOMATION - Escribo el password
-17:57:42.611 INFO  AUTOMATION - Hago click en el botón de login
-17:57:42.672 INFO  AUTOMATION - Click en el botón de logout
-17:57:45.297 DEBUG AUTOMATION - Matando el driver
-17:57:45.407 INFO  AUTOMATION - After all
+18:08:22.238 DEBUG AUTOMATION - Inicializando el driver
+18:08:23.178 DEBUG AUTOMATION - Maximizando la pantalla
+18:08:23.205 DEBUG AUTOMATION - Agregando implicitWait
+18:08:23.755 INFO  AUTOMATION - Selecciono el radiobutton Diario
+18:08:23.816 INFO  AUTOMATION - Verifico que el botón ha sido seleccionado
+18:08:24.361 DEBUG AUTOMATION - Matando el driver
+18:08:24.497 DEBUG AUTOMATION - Inicializando el driver
+18:08:25.170 DEBUG AUTOMATION - Maximizando la pantalla
+18:08:25.207 DEBUG AUTOMATION - Agregando implicitWait
+18:08:25.754 INFO  AUTOMATION - Selecciono el radiobutton semanal
+18:08:25.815 INFO  AUTOMATION - Verifico que el botón ha sido seleccionado
+18:08:26.350 DEBUG AUTOMATION - Matando el driver
+18:08:26.477 DEBUG AUTOMATION - Inicializando el driver
+18:08:27.112 DEBUG AUTOMATION - Maximizando la pantalla
+18:08:27.148 DEBUG AUTOMATION - Agregando implicitWait
+18:08:27.651 INFO  AUTOMATION - Selecciono el radiobutton Mensual
+18:08:27.712 INFO  AUTOMATION - Verifico que el botón ha sido seleccionado
+18:08:28.249 DEBUG AUTOMATION - Matando el driver
+18:08:28.359 DEBUG AUTOMATION - Inicializando el driver
+18:08:29.005 DEBUG AUTOMATION - Maximizando la pantalla
+18:08:29.041 DEBUG AUTOMATION - Agregando implicitWait
+18:08:29.570 INFO  AUTOMATION - Selecciono el radiobutton videojuegos
+18:08:29.628 INFO  AUTOMATION - Verifico que el botón ha sido seleccionado
+18:08:30.165 DEBUG AUTOMATION - Matando el driver
+18:08:30.263 INFO  AUTOMATION - After all

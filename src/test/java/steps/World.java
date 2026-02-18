@@ -46,7 +46,7 @@ public class World {
     @After
     public void tearDown() {
         try {
-            Thread.sleep(2500);
+            Thread.sleep(500);
 
         }catch (InterruptedException interruptedException){
 
