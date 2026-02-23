@@ -1,9 +1,5 @@
-17:57:41.027 DEBUG AUTOMATION - Inicializando el driver
-17:57:41.910 DEBUG AUTOMATION - Maximizando la pantalla
-17:57:41.936 DEBUG AUTOMATION - Agregando implicitWait
-17:57:42.502 INFO  AUTOMATION - Escribo el username
-17:57:42.568 INFO  AUTOMATION - Escribo el password
-17:57:42.611 INFO  AUTOMATION - Hago click en el botón de login
-17:57:42.672 INFO  AUTOMATION - Click en el botón de logout
-17:57:45.297 DEBUG AUTOMATION - Matando el driver
-17:57:45.407 INFO  AUTOMATION - After all
+22:54:30.542 DEBUG AUTOMATION - Inicializando el driver
+22:54:31.581 DEBUG AUTOMATION - Maximizando la pantalla
+22:54:31.624 DEBUG AUTOMATION - Agregando implicitWait
+22:54:35.105 DEBUG AUTOMATION - Matando el driver
+22:54:35.225 INFO  AUTOMATION - After all
