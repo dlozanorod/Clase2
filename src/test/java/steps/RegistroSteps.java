@@ -11,9 +11,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import utilities.Logs;
 
+import java.util.List;
+
 public class RegistroSteps {
     private final WebDriver driver;
     private String frec;
+    private List<WebElement> opciones;
 
     public RegistroSteps(World world) {
         driver = world.driver;
@@ -30,13 +33,13 @@ public class RegistroSteps {
         final var checkboxLibros = driver.findElement(By.id("libros"));
 
         final var radioDiario = driver.findElement(By.id("diario"));
-        final var radioSemanal =driver.findElement(By.id("semanal"));
-        final var radioMensual =driver.findElement(By.id("mensual"));
+        final var radioSemanal = driver.findElement(By.id("semanal"));
+        final var radioMensual = driver.findElement(By.id("mensual"));
 
-        final var botonRegistro =driver.findElement(By.cssSelector("button[type='submit']"));
+        final var botonRegistro = driver.findElement(By.cssSelector("button[type='submit']"));
 
         Assertions.assertAll(
-                () -> Assertions.assertTrue(checkboxDeportes.isDisplayed(),"Checkbox deportes correcto"),
+                () -> Assertions.assertTrue(checkboxDeportes.isDisplayed(), "Checkbox deportes correcto"),
                 () -> Assertions.assertFalse(checkboxDeportes.isSelected(), "Checkbox deportes deseleccionado"),
                 () -> Assertions.assertTrue(checkboxVideojuegos.isDisplayed()),
                 () -> Assertions.assertFalse(checkboxVideojuegos.isSelected()),
@@ -54,7 +57,7 @@ public class RegistroSteps {
 
                 () -> Assertions.assertTrue(botonRegistro.isDisplayed()),
                 () -> Assertions.assertFalse(botonRegistro.isEnabled()),
-                () -> Assertions.assertEquals("Registrar",botonRegistro.getText())
+                () -> Assertions.assertEquals("Registrar", botonRegistro.getText())
 
         );
 
@@ -76,8 +79,8 @@ public class RegistroSteps {
         Logs.info("Verifico que el botón ha sido seleccionado");
 
         WebElement elemento = driver.findElement(By.id(frec));
-        boolean seleccion = elemento.isSelected();;
-
+        boolean seleccion = elemento.isSelected();
+        ;
 
 
         Assertions.assertAll(
@@ -88,9 +91,30 @@ public class RegistroSteps {
 
         if (seleccion) {
             System.out.println("está seleccionado");
-        }else {
+        } else {
             System.out.println("no está seleccionado");
         }
 
+    }
+
+    @When("Selecciono los botones de preferencias")
+    public void seleccionoLosBotonesDePreferencias() {
+        //var checkboxes = driver.findElements(By.cssSelector("input[type='checkbox']"));
+        opciones = driver.findElements(By.cssSelector("input[type='checkbox']"));
+
+        for (var checkbox : opciones) {
+            checkbox.click();
+        }
+    }
+
+    @Then("Verifico que los botones esten seleccionados")
+    public void verificoQueLosBotonesEstenSeleccionados() {
+        //var checkboxes = driver.findElements(By.cssSelector("input[type='checkbox']"));
+        opciones = driver.findElements(By.cssSelector("input[type='checkbox']"));
+
+        for (var checkbox : opciones) {
+            Assertions.assertTrue(checkbox.isSelected());
+
+        }
     }
 }
